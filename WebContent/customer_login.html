@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+body{
+background:url("s16.jpg");
+ 
+background-repeat:no-repeat;
+background-size:1000px;
+height:780px;
+width:200;
+background-position:right;
+background-color:white;
+
+}
+body{font-family:arial,helvetica,sans-serif;}
+input[type=text],
+input[type=password]{
+width:25%;
+padding:25px;
+margin:10px 0 22px 0;
+display:inline-block;
+border:none;
+background:#f1f1f1;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+background-color:#ddd;
+outline:none;
+}
+hr{
+border:1px solid #f1f1f1;
+margin-bottom:25px;
+}
+button{
+background-color:#4CAF50;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width:100%;
+opacity:0.9;
+}
+button:hover{
+opacity:1;
+}
+.cancelbtn{
+padding:14px 20px;
+background-color:#f44336;
+}
+.cancelbtn, .signupbtn{
+float:left;
+width:50%;
+}
+.container{
+padding:16px;
+}
+.clearfix::after{
+content:"";
+clear:both;
+display:table;
+}
+@media screen and (max-width:300px){
+.cancelbtn, .signupbtn{
+width:100%
+}
+}
+</style>
+
+<body>
+<hl><marquee direction="right" ><font color="purple"></font></marquee></hl>
+<h1> <marquee direction="right""color:purple">WELCOME TO CUSTOMER REGESTRATION PAGE!</p></marquee></h1>
+<form action="s2.jsp" method="post">
+
+<p>CUSTOMER NAME:<br><input type="text" name="cust_name" required/></p>
+<p>CUSTOMER PHONE:<br><input type="text" name="phone_no" pattern="[0-9]{1}[0-9]{9}" title="phone number should be 10 digits" required/></p>
+<p>E-MAIL:<br><input type="email" name="email" required/></p>
+<p>USERNAME:<br><input type="text" name="username" required/></p>
+<p>PASSWORD:<br><input type="password" name="password" required/></p>
+<p>SUBMIT:<input type="submit"  onclick="location.href='customer_homepage.html' class="button"value="submit" required/></p>
+<br/>
+
+<input type="back" class="button" onclick="location.href='direct.html';" value="Back">
+
+
+</form>
+</body>
+</html>
